@@ -520,35 +520,3 @@ OR 19.01
 AND P_1s
 ORLD
 OUT 100.07
-'  Turns Saw motor On. The P_On contact can be switched to P_Off to disable the saw blade motor for testing
-LD 16.02
-OR 16.03
-OR 16.04
-AND 1.02
-AND 1.03
-AND 0.08
-AND P_On
-OUT 101.00
-LD P_Off
-OUT 101.01
-LD 16.03
-LD 18.01
-AND 0.05
-ANDNOT 0.11
-ORLD
-OUT 101.02
-LD 16.06
-OR 19.04
-LD 18.01
-AND 0.06
-ANDNOT 0.10
-ORLD
-OUT 101.03
-LD 18.00
-OR 16.02
-OR 16.03
-OUT 101.04
-LD 16.06
-OUT 101.05
-LD 100.00
-OUT 101.06
